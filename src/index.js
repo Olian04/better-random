@@ -1,17 +1,11 @@
-Math.random.between = (min, max) => 
-  Math.floor(Math.random()*(max-min+1)+min);
+const between = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
 
-Math.random.rgba = () => 
-  `rgba(${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.between(0, 100) / 100})`;
-
-Math.random.rgb = () => 
-  `rgba(${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.between(0, 255)})`;
-
-Math.random.select = array => 
-  array[Math.random.between(0, array.length-1)];
-
+Math.random.between = between;
+Math.random.rgba = () => `rgba(${between(0, 255)}, ${between(0, 255)}, ${between(0, 255)}, ${between(0, 100) / 100})`;
+Math.random.rgb = () => `rgba(${between(0, 255)}, ${between(0, 255)}, ${between(0, 255)})`;
+Math.random.select = (array) => array[between(0, array.length-1)];
 Math.random.pixel = () => {
-	const canvas = document.createElement('canvas');
+  const canvas = document.createElement('canvas');
   canvas.height = canvas.width = 1;
   const ctx = canvas.getContext('2d');
   ctx.fillStyle = Math.random.rgb();
