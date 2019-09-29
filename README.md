@@ -1,5 +1,5 @@
 # better-random
-A collection of useful random-related-functions to make the `Math.random` module a bit more usefull.
+A collection of useful random-related-functions to make the `Math.random` module a bit more useful.
 
 __CDN:__
 
