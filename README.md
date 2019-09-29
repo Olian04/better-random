@@ -7,13 +7,11 @@ __CDN:__
 <script src="https://cdn.jsdelivr.net/gh/olian04/better-random/src/index.js"></script>
 ```
 
-## Demo
+__Demo:__ <br>
 
 https://jsfiddle.net/olian04/czjyot4d/30/
 
-## Docs
-
-### Math.random.between(min, max)
+## Math.random.between(min, max)
 
 Returns a random integer between `min` and `max`.
 
@@ -21,7 +19,7 @@ Returns a random integer between `min` and `max`.
 Math.random.between = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
 ```
 
-### Math.random.procentage()
+## Math.random.procentage()
 
 Returns a random float between `0` and `1`.
 
@@ -29,7 +27,7 @@ Returns a random float between `0` and `1`.
 Math.random.procentage = () => Math.random.between(0, 100) / 100;
 ```
 
-### Math.random.select(array)
+## Math.random.select(array)
 
 Returns a random element from the given array.
 
@@ -39,7 +37,7 @@ Math.random.select = (array) => array[Math.random.between(0, array.length-1)];
 
 ```
 
-### Math.random.rgba()
+## Math.random.rgba()
 
 Returns a random rgba color in the format `rgba(red, green, blue, alpha)`.
 
@@ -47,7 +45,7 @@ Returns a random rgba color in the format `rgba(red, green, blue, alpha)`.
 Math.random.rgba = () => `rgba(${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.procentage()})`;
 ```
 
-### Math.random.rgb()
+## Math.random.rgb()
 
 Returns a random rgb color in the format `rgb(red, green, blue)`.
 
@@ -55,7 +53,7 @@ Returns a random rgb color in the format `rgb(red, green, blue)`.
 Math.random.rgb = () => `rgba(${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.between(0, 255)})`;
 ```
 
-### Math.random.pixel()
+## Math.random.pixel()
 
 Returns a the data-url representation of an image thats 1x1-pixels in size with a random rgb backgroundcolor.
 
