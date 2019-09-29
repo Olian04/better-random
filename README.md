@@ -25,8 +25,6 @@ Math.random.between = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
 
 Returns a random float between `0` and `1`.
 
-Math.random.between
-
 ```js
 Math.random.procentage = () => Math.random.between(0, 100) / 100;
 ```
