@@ -7,3 +7,7 @@ __CDN:__
 <script src="https://cdn.jsdelivr.net/gh/olian04/better-random/src/index.js"></script>
 ```
 
+
+## Demo
+
+https://jsfiddle.net/olian04/czjyot4d/30/
