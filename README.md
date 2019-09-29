@@ -35,4 +35,4 @@ Returns a random rgb color in the format `rgb(red, gree, blue)`.
 
 ### Math.random.pixel()
 
-Returns an the data-url representation of an image thats 1x1-pixels in size with a random rgb backgroundcolor.
+Returns a the data-url representation of an image thats 1x1-pixels in size with a random rgb backgroundcolor.
