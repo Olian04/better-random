@@ -9,7 +9,7 @@ __CDN:__
 
 __Demo:__ <br>
 
-https://jsfiddle.net/olian04/czjyot4d/30/
+https://jsfiddle.net/olian04/czjyot4d/53/
 
 ## Math.random.between(min, max)
 
