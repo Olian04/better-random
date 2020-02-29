@@ -19,12 +19,12 @@ Returns a random integer between `min` and `max`.
 Math.random.between = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
 ```
 
-## Math.random.procentage()
+## Math.random.percentages()
 
 Returns a random float between `0` and `1`.
 
 ```js
-Math.random.procentage = () => Math.random.between(0, 100) / 100;
+Math.random.percentages = () => Math.random.between(0, 100) / 100;
 ```
 
 ## Math.random.select(array)
@@ -42,7 +42,7 @@ Math.random.select = (array) => array[Math.random.between(0, array.length-1)];
 Returns a random rgba color in the format `rgba(red, green, blue, alpha)`.
 
 ```js
-Math.random.rgba = () => `rgba(${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.procentage()})`;
+Math.random.rgba = () => `rgba(${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.between(0, 255)}, ${Math.random.percentages()})`;
 ```
 
 ## Math.random.rgb()
